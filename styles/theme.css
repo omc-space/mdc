@@ -1,0 +1,106 @@
+article{
+  :root{
+    --text-color: #333;
+  }
+
+  color: var(--text-color);
+  font-size: 15px;
+  letter-spacing: 2px;
+  word-break: break-word;
+  font-family: var(--font-sans), system-ui, -apple-system, PingFang SC, "Microsoft YaHei", Segoe UI, Roboto, Helvetica, noto sans sc, hiragino sans gb, "sans-serif", Apple Color Emoji, Segoe UI Emoji, Not Color Emoji;
+  scroll-behavior: smooth;
+  background-size: 50px 50px;
+
+  p{
+    line-height: 30px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 24px 0 12px 0;
+    opacity: 0.9;
+    font-weight: 600;
+  }
+
+  h1::after,
+  h2::after,
+  h3::after,
+  h4::after,
+  h5::after,
+  h6::after{
+    content: '#';
+    font-size: medium;
+    padding-left: 0.2rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  
+  h1:hover::after,
+  h2:hover::after,
+  h3:hover::after,
+  h4:hover::after,
+  h5:hover::after,
+  h6:hover::after{
+    opacity: 1;
+  }
+
+  h1 {
+    line-height: 3;
+    font-size: 1.4em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+
+  ol,
+  ul {
+    padding-left: 2em;
+  }
+  ol li,
+  ul li {
+    margin-bottom: 0;
+    padding-left: 0.2em;
+  }
+  ol li::marker,
+  ul li::marker {
+    color: var(--color-1);
+  }
+  
+  ol li.task-list-item,
+  ul li.task-list-item {
+    list-style: none;
+  }
+
+  ol li.task-list-item ul,
+  ol li.task-list-item ol,
+  ul li.task-list-item ul,
+  ul li.task-list-item ol {
+    margin-top: 0;
+  }
+  ol ul,
+  ol ol,
+  ul ul,
+  ul ol {
+    margin-top: 10px;
+  }
+  p,
+  li,
+  code,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a {
+    vertical-align: baseline;
+    transition: all 0.1s ease;
+  }
+}
